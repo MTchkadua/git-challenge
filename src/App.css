@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modeContainer{
+    
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modeChange{
+    cursor: pointer;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.darkTxt{
+    font-family: "SpaceMonoBold";
+    font-size: 13px;
+}
+.devfinder{
+    font-family: "SpaceMonoBold";
+    font-size: 26px;
+
+}
+.searchContainer{
+    margin-top: 35px;
+    display: flex;
+    width: 730px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    height: 69px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+}
+.searchInput{
+    cursor: pointer;
+    border: none;
+    width: 400px;
+    height: 69px;
+    outline: none;
+}
+.noResult{
+    width: 90px;
+    color: red;
+    font-family: "SpaceMonoBold";
+    font-size: 15px;
+   
+}
+.searchButton{
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background: #0079FF;
+    border-radius: 10px;
+    width: 106px;
+    height: 50px;
+    border: none;
+}
+.container{
+    margin-top: 24px;
+    width: 730px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+}
+.imgSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.profImg{
+    margin-top: 48px;
+    width: 117px;
+    height: 117px;
+    border-radius: 50%;
+}
+.userNameCOntainer{
+    margin-top: 44px;
+    width: 70%;
+}
+.octocatName{
+    font-size: 26px;
+    font-family: "SpaceMonoBold";
+}
+.joined{
+    font-size: 15px;
+    font-family: "SpaceMonoRegular";
+}
+.hashtag{
+    font-size: 16px;
+    font-family: "SpaceMonoRegular";
+    color: #0079FF;
+    margin-top: 8px;
+}
+.bio{
+    font-size: 15px;
+    font-family: "SpaceMonoRegular";
+}
+.bioMobileTxt{
+    font-size: 15px;
+    font-family: "SpaceMonoRegular";
+    display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reposContainer{
+    width: 65%;
+    height: 85px;
+    margin-left: 193px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.repos{
+    font-size: 13px;
+    font-family: "SpaceMonoRegular";
+}
+.reposNumbers{
+    font-size: 22px;
+    font-family: "SpaceMonoBold";
+    margin-top: 7px;
+}
+.reposBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mediaContainer{
+    width: 65%;
+    margin-left: 190px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    flex-wrap: wrap;
+}
+.mediaBox{
+    cursor: pointer;
+    display: flex;  
+    align-items: center;
+}
+.mediaBox2{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.mediaTxt{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "SpaceMonoRegular";
+    margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+@media(max-width: 750px){
+    .modeContainer{
+        width: 573px;
+    }
+    .searchContainer{
+        width: 573px;
+    }
+    .searchInput{
+        width: 280px;
+    }
+    .searchButton{
+        width: 106px;
+    }
+    .noResult{
+        display: block;
+    }
+    .imgSection{
+        margin-left: 10px;
+    }
+    .container{
+        width: 573px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+    .userNameCOntainer{
+        margin-left: 10px;
+       
+    }
+    .octocatName{
+        margin-top: 10px;
+    }
+    .bio{
+        display: none;
+    }
+    .bioMobileTxt{
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .joined{
+        margin-top: 20px;
+        margin-right: 10px;
+        width: 300px;
+    }
+    .reposContainer{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 95%;
+    }
+    .mediaContainer{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .mediaBox2{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width: 573px){
+    .modeContainer{
+        width: 327px;
+    }
+    .searchContainer{
+        width: 327px;
+    }
+    .searchInput{
+        width: 180px;
+    }
+    .searchButton{
+        width: 80px;
+    }
+    .noResult{
+        display: none;
+    }
+    .imgSection{
+        margin-left: 10px;
+    }
+    .container{
+        width: 327px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .userNameCOntainer{
+        margin-left: 10px;
+       
+    }
+    .octocatName{
+        margin-top: 10px;
+    }
+    .bio{
+        display: none;
+    }
+    .bioMobileTxt{
+        display: block;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .joined{
+        margin-top: 20px;
+        width: fit-content;
+    }
+    .reposContainer{
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 95%;
+    }
+    .mediaContainer{
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .mediaBox2{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }

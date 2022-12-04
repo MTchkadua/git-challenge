@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@font-face {
+  font-family: "SpaceMonoRegular";
+  src: local("SpaceMonoRegular"),
+   url("./space-mono/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: "SpaceMonoBold";
+    src: local("SpaceMonoBold"),
+     url("./space-mono/SpaceMono-Bold.ttf") format("truetype");
+    font-weight: bolder;
+}
