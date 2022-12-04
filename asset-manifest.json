@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/git-challenge/static/css/main.e2591ab2.css",
+    "main.js": "/git-challenge/static/js/main.412d58df.js",
+    "static/media/SpaceMono-Regular.ttf": "/git-challenge/static/media/SpaceMono-Regular.ff658697ca424c4d8a2f.ttf",
+    "static/media/SpaceMono-Bold.ttf": "/git-challenge/static/media/SpaceMono-Bold.5c53f04c45b7ae83d944.ttf",
+    "index.html": "/git-challenge/index.html",
+    "main.e2591ab2.css.map": "/git-challenge/static/css/main.e2591ab2.css.map",
+    "main.412d58df.js.map": "/git-challenge/static/js/main.412d58df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2591ab2.css",
+    "static/js/main.412d58df.js"
+  ]
+}
